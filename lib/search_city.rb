@@ -19,6 +19,7 @@ module SearchCity
      puts "Погоду для какого города Вы хотите узнать?" 
      cities.each_with_index { |c,i| puts "#{i+1}: #{c}"}
      index_city = gets.chomp
+     puts
    end
    cities[index_city.to_i-1]
  end
